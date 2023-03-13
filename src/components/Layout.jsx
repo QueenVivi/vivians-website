@@ -11,10 +11,6 @@ const Layout = ({ children }) => (
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
         crossorigin="anonymous"
       />
-      <script
-        src="https://kit.fontawesome.com/d678a5487c.js"
-        crossorigin="anonymous"
-      ></script>
     </Head>
     <Header />
     {children}

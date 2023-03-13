@@ -1,4 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -6,8 +7,12 @@ export default function Document() {
       <Head />
       <body>
         <Main />
+        <Script
+          src="https://kit.fontawesome.com/d678a5487c.js"
+          crossOrigin="anonymous"
+        />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
