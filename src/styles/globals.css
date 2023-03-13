@@ -1,34 +1,265 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
 
-@layer base {
-  body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
-  }
+body {
+  font-family: var(--default-font-family);
+  text-align: center;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
+h2 {
+  padding-top: 60px;
+  font-family: var(--primary-color);
+  font-size: 36px;
+  line-height: 54px;
+}
 
+h1 {
+  font-family: var(--heading-font-family);
+  font-size: 96px;
+  line-height: 128px;
+}
+.logo {
+  width: 66px;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+}
+
+.hero p {
+  color: #272142;
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-top: 24px;
+}
+
+.btn-branding {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+  font-family: var(--primary-color);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 46px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-decoration: none;
+}
+
+.btn-branding:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.project-photo {
+  border-radius: 8px;
+}
+
+.projects p {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #272142;
+}
+
+.projects .row p {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.7);
+  margin-bottom: 68px;
+}
+
+.projects h2 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  padding-top: 0;
+  margin-bottom: 55px;
+}
+
+.projects .btn {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 18px 30px;
+}
+
+.projects .description {
+  text-align: left;
+}
+.projects .row {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 414px) {
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    font-size: 48px;
   }
 
-  h2 {
-    @apply text-3xl sm:text-4xl;
+  .project-photo {
+    display: none;
   }
 
-  li {
-    @apply cursor-pointer;
+  .logo {
+    width: 80px;
   }
+  .about img {
+    margin-top: 0;
+  }
+}
 
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
-  }
+.about {
+  margin-top: 100px;
+}
+
+.about .content {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.about h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.about h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  padding-top: 0;
+  margin-bottom: 48px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(39, 33, 66, 0.7);
+}
+
+.about img {
+  width: 500px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.work {
+  margin-bottom: 60px;
+}
+
+.my-works {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.work h3 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.work p {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(39, 33, 66, 0.7);
+}
+
+.work .coding-photo {
+  border-radius: 8px;
+}
+
+.contact {
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.contact h1 {
+  margin-bottom: 40px;
+}
+
+.contact h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.inquiry {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 50px 120px;
+  margin-bottom: 40px;
+}
+
+footer .email {
+  margin: 60px 0px;
+}
+
+.footer {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer:hover {
+  color: var(--primary-color);
+}
+
+footer .social-links {
+  margin-bottom: 30px;
+}
+
+footer .social-links a {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+footer .social-links a:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
