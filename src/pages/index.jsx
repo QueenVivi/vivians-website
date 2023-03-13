@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 
@@ -41,16 +42,22 @@ const HomePage = () => (
               </a>
             </div>
             <div className="col-sm-6">
-              <img
-                src="images/chuckroo.png"
+              <Image
+                alt="Screenshot of ChuckRoo website"
+                src="/images/chuckroo.png"
                 className="project-photo img-fluid"
+                width="1598"
+                height="794"
               />
             </div>
           </div>
           <div className="row">
             <div className="col-sm-6">
-              <img
-                src="images/weather.png"
+              <Image
+                alt="Screenshot of Fun Weather App"
+                src="/images/weather.png"
+                width="2240"
+                height="2240"
                 className="project-photo img-fluid"
               />
             </div>
@@ -88,9 +95,12 @@ const HomePage = () => (
               </a>
             </div>
             <div className="col-sm-6">
-              <img
-                src="images/olyweb.png"
+              <Image
+                alt="Screenshot of Oly's website"
+                src="/images/olyweb.png"
                 className="project-photo img-fluid"
+                width="1431"
+                height="746"
               />
             </div>
           </div>
